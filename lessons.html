@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lessons - WebDev Basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header>
+<h1 class="logo">WebDev Basics</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="quizzes.html">Quiz</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<main id="main">
+  <h2>Lessons</h2>
+  <details>
+    <summary>HTML Basics</summary>
+    <div class="info-box">
+      <ul>
+        <li><strong>!Doctype</strong> - Every HTML document needs a !DOCYTPE html.</li>
+        <li><strong>&lt;h1&gt;</strong> - This is biggest heading tag, for page titles.</li>
+        <li><strong>&lt;p&gt;</strong> - A paragraph of text.</li>
+        <li><strong>&lt;a&gt;</strong> - A link to another page or website.</li>
+        <li><strong>&lt;img&gt;</strong> - Adds an image to the page.</li>
+        <li><strong>&lt;ul&gt;</strong> - A bullet point list.</li>
+        <li><strong>&lt;ol&gt;</strong> - A numbered list.</li>
+        <li><strong>&lt;table&gt;</strong> - Shows information in rows and columns.</li>
+        <li><strong>&lt;strong&gt;</strong> - Defines text with strong importance by displaying content in bold.</li>
+    </ul>
+    <h2>HTML Example</h2>
+  <p>This example uses the HTML tags above:</p>
+  <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;HTML Example&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    &lt;h1&gt;My Web Page&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+      &lt;a href="https://exampleLink.com"&gt;Visit Example&lt;/a&gt;
+      &lt;img src="images/pic.jpg" alt="HTML &amp; CSS code example"&gt;
+
+      &lt;ul&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;ol&gt;
+        &lt;li&gt;First&lt;/li&gt;
+        &lt;li&gt;Second&lt;/li&gt;
+      &lt;/ol&gt;
+
+      &lt;table&gt;
+        &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;Alice&lt;/td&gt;&lt;td&gt;25&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+
+      &lt;/body&gt;
+      &lt;/html&gt;
+  </pre>
+    <h2>Another HTML Example</h2>
+    <p>This example uses a combination of the HTML tags above:</p>
+  <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;Combined HTML Example&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    &lt;h1&gt;&lt;strong&gt;This heading is important!&lt;/strong&gt;&lt;h1&gt;
+ 
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href = "www.link.co.za"&gt;This is a link in a list&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;There is an image in a list below me!&lt;/li&gt;
+        &lt;li&gt;&lt;img src = "images/someImage" alt = "Some image"&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;ul&gt;
+          &lt;li&gt;Item 1 of unordered list&lt;/li&gt;
+          &lt;li&gt;Item 2 of unordered list
+            &lt;ol&gt;
+              &lt;li&gt;Sub-item A of ordered list&lt;/li&gt;
+              &lt;li&gt;Sub-item B of ordered list&lt;/li&gt;
+            &lt;/ol&gt;
+          &lt;/li&gt;
+          &lt;li&gt;item 3 of unordered list&lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;table&gt;
+        &lt;tr&gt;&lt;th&gt;ID number&lt;/th&gt;&lt;th&gt;ID picture&lt;/th&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;123456789&lt;/td&gt;&lt;td&gt;&lt;img src = "Images/IDphoto.jpg"&gt;&lt;/td&gt;&lt;/tr&gt;
+      &lt;/table&gt;
+
+      &lt;/body&gt;
+      &lt;/html&gt;
+  </pre>
+    </div>
+  </details>
+  <details>
+    <summary>CSS Basics</summary>
+    <div class="info-box">
+    <ul>
+      <li><strong>color</strong> - Changes text color.</li>
+      <li><strong>background-color</strong> - Changes background color.</li>
+      <li><strong>font-size</strong> - Makes text bigger or smaller.</li>
+      <li><strong>margin</strong> - Space outside an element.</li>
+      <li><strong>padding</strong> - Space inside an element, around the text.</li>
+      <li><strong>border</strong> - Adds a line around an element.</li>
+    </ul>
+    <h3>Different CSS box displays:</h3>
+    <ul>
+      <li><strong>display: none</strong> - Hides an element.</li>
+      <li><strong>display: inline</strong> - Displays an element inline with other elements. Any height and width properties will have no effect.</li>
+      <li><strong>display: block</strong> - Takes up full available width of parent container, unless a specific width is defined and starts on a new line.</li>
+      <li><strong>display: inline-block</strong> - Like inline elements,but allows other elements to sit alongside them on the same line.</li>
+    </ul>
+
+    <h2>CSS Example</h2>
+  <p>This example demonstrates some basic CSS properties:</p>
+  <pre>
+    /* Changes text color */
+    p {
+      color: #003366;
+    }
+
+    /* Changes background color */
+    div {
+      background-color: #f0f0f0;
+    }
+
+    /* Makes text bigger or smaller */
+    h1 {
+      font-size: 24px;
+    }
+
+    /* Space outside an element */
+    section {
+      margin: 20px;
+    }
+
+    /* Space inside an element, around the text */
+    button {
+      padding: 10px;
+    }
+
+    /* Adds a line around an element */
+    img {
+      border: 2px solid black;
+    }
+  </pre>
+    </div>
+  </details>
+  <details>
+    <summary>Accessibility</summary>
+    <div class="info-box">
+    <ul>
+      <li>Always add alt text to images.</li>
+      <li>Make text easy to see with good contrast.</li>
+      <li>Use headings in the right order.</li>
+      <li>Make sure the site works without a mouse.</li>
+      <li>Dont use only color to show meaning.</li>
+      <li>Use clear, descriptive link text.</li>
+    </ul>
+    </div>
+  </details>
+</main>
+
+<footer>
+  <p>&copy; 2025 WebDev Basics</p>
+</footer>
+
+</body>
+</html>
